@@ -2,66 +2,78 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Florida Energy Systems Consortium">
-    <meta name="keywords" content="eneregy,research,renewable,solor,wind,natural,gas,oil,coal,electricity,faculty,team,fesc,florida,university,nuclear,oil">
+    <meta name="keywords" content="eneregy,research,renewable,solor,wind,natural,gas,oil,coal,electricity,fesc,florida,university,nuclear,oil">
     <meta name="author" content="Brian Han">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <title>FESC - Team Members</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/team.css">
+    <link rel="stylesheet" type="text/css" href="styles/nav.css">
+    <title>FESC - Meet the Team</title>
   </head>
   
   <body>
     <header>
+  
       <!-- Title Bar -->
-      <div id="first-bar" class="top-bar">
-        <div id="fesc" class="fesc">
-          <a href="index.html">Florida Energy Systems Consortium</a>
-        </div> 
+      <div class="container">
+      <div class="row slogan-bar">
+        <!-- Title Column -->
+        <div id="fesc" class="col-xs-12 col-sm-12 col-md-12 slogan-bar-col2">
+          <a href="index.html">Universities Addressing Florida's Energy Needs</a>
+        </div>
+        <!-- End Title Column -->
+      </div>
       </div>
       <!-- End of Title Bar -->
       
-      <!-- Skip Bar for spacing -->
-      <div id="second-bar" class="skip-bar"></div>
-      <!-- End of Skip Bar --> 
       
       <!-- Logo and Search Bar -->
-      <div id="third-bar" class="mid-bar">
-        <div class="mid-left">
-          <img class="logo" src="img/header_logo.png" alt="fesc logo">
-        </div>
-        <div class="mid-right">
-          <div class="mid-right-top">
-            <ul id="top-menu" class="top-menu">
-              <li><a href=team.html>Meet the FESC Team</a></li>
-              <li><a href=#>Resources</a></li>
-              <li><a href=#>Contact</a></li>
-            </ul>
+      <div class="container">
+        <div class="row logo-bar">
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="logo">
+              <a href=#><img src="img/header_logo6.png" alt="fesc logo"></a>
+            </div>
           </div>
-          <div class="mid-right-bottom">
-            <form method="get" id="search">
-              <input type="text" class="text" id="search-text" name="search" placeholder="Search">
-              <input type="submit" class="submit" id="search-submit" value="Submit">
-            </form>
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="top-menu">
+              <ul>
+                <li class="left"><a href="team.html">Meet The Team</a></li>
+                <li class="middle"><a href=#>Resources</a></li>
+                <li class="right"><a href=#>Contact Me</a></li>
+              </ul>
+            </div>
+            <div class="search">
+              <form method="get" id="search">
+                <input type="text" class="text" id="search-text" name="search" placeholder="Search">
+                <input type="submit" class="submit" id="search-submit" value="Submit">
+              </form>
+            </div>
           </div>
         </div>
       </div>
-      <!-- End Logo and Seach Bar -->
+      <!-- End Logo and Search Bar -->
+      
       
       <!-- Navigation Menu Bar -->
-      <div id="fourth-bar" class="bottom-bar">
-        <ul id="nav-menu" class="menu">
-          <li id="nav-menu0" class="menu0">
+      <div class="container">
+        <ul class="row navbar">
+          <li class="col-xs-12 col-sm-1 col-md-1">
             <a href="index.html">Home</a>
           </li>
-          <li id="nav-menu1" class="menu1">
-            <a href=#>Research</a>
-            <ul class="sub-menu1">
-              <li class="sub-menu1a"><a href=#>Universities</a></li>
-              <li class="sub-menu1b"><a href=research.html>Fields</a></li>
-            </ul>
+          <li class="col-xs-12 col-sm-1 col-md-1">
+            <a href="index.html">Research</a>
+              <ul class="sub-menu1">
+                <li class="sub-menu1a"><a href=research.html>Fields</a></li>
+                <li class="sub-menu1b"><a href=#>Universities</a></li>
+              </ul>
           </li>
-          <li id="nav-menu2" class="menu2">
-            <a href=#>Education</a>
+          <li class="col-xs-12 col-sm-1 col-md-1">
+            <a href="index.html">Education</a>
             <ul class="sub-menu2">
               <li class="sub-menu2a"><a href=#>Degrees</a></li>
               <li class="sub-menu2b"><a href=#>Certificates</a></li>
@@ -70,8 +82,8 @@
               <li class="sub-menu2e"><a href=#>Nuclear Training Reactor at UF</a></li>
             </ul>
           </li>
-          <li id="nav-menu3" class="menu3">
-            <a href=#>Member Facilities</a>
+          <li class="col-xs-12 col-sm-1 col-md-1">
+            <a href="index.html">Facilities</a>
             <ul class="sub-menu3">
               <li class="sub-menu3a"><a href=#>Univ of Central Florida</a></li>
               <li class="sub-menu3b"><a href=#>Univ of Florida</a></li>
@@ -80,11 +92,11 @@
               <li class="sub-menu3e"><a href=#>Florida Intl Univ</a></li>
               <li class="sub-menu3r"><a href=#>Florida State Univ</a></li>
               <li class="sub-menu3g"><a href=#>Florida Solar Energy Center</a></li>
-              <li class="sub-menu3h"><a href=#>Florida Institute of Tech</a></li>              
+              <li class="sub-menu3h"><a href=#>Florida Institute of Tech</a></li> 
             </ul>
           </li>
-          <li id="nav-menu4" class="menu4">
-            <a href=#>Energy Industry</a>
+          <li class="col-xs-12 col-sm-1 col-md-1">
+            <a href="index.html">Energy Industry</a>
             <ul class="sub-menu4">
               <li class="sub-menu4a"><a href=#>BioMass</a></li>
               <li class="sub-menu4b"><a href=#>Electric</a></li>
@@ -97,8 +109,8 @@
               <li class="sub-menu4i"><a href=#>Others</a></li>
             </ul>
           </li>
-          <li id="nav-menu5" class="menu5">
-            <a href=#>About Us</a>
+          <li class="col-xs-12 col-sm-1 col-md-1">
+            <a href="index.html">About Us</a>
             <ul class="sub-menu5">
               <li class="sub-menu5a"><a href=#>Mission Statement</a></li>
               <li class="sub-menu5b"><a href=#>Who We Are</a></li>
@@ -108,158 +120,151 @@
             </ul>
           </li>
         </ul>
+      
       </div>
       <!-- End of Nav Bar -->
     </header>
     
     <!-- Container for Image -->
-    <div id="research-image" class="lightbulb">
-      <img src="img/team-head.jpg" alt="lightbulb">
+    <div id="research-image" class="image-bar">
+      <img class="image" src="img/team-head2.jpg" alt="men in a lab">
     </div>
     <!-- end Container for Image -->
     
-    
-    
     <!-- Container for Main Body section -->
-    <main>
-      <div class="team-inner-box">
-        <h1>Meet The Team</h1>
-        <div class="team-row1-spacer"></div> 
-        
-        <!-- Container for first row of images -->
-        <div class="team-row2">
-          
-          <div class="team-row2-col1">
-            <div class="team-row2-col1-inner">
-              <div class="team-row2-col1-inner-row1">
-                <h2>Advisory Board</h2>
-              </div>
-              <div class="team-row2-col1-inner-row2">
-                <a href=#><img src="img/team-advisory.jpg" alt="advisory board thumbnail"></a>
-              </div>
-              <div class="team-row2-col1-inner-row3">
-                <p class="team-text"><a href=#>All Advisory Board Members</a></p>
-              </div>
-            </div>
+    <main class="main-body">
+      <section class="container team-body">
+        <div class="row body-row1">
+          <div class="col-md-12 body-row1-col1">
+            <h1 class="heading1">People</h1>
+            <p class="heading1">Search for all the people involved in the FESC by clicking on the the groups listed below.</p>
           </div>
-          
-          <div class="team-row2-col2 spacer"></div>
-          
-          <div class="team-row2-col3">
-            <div class="team-row2-col2-inner">
-              <div class="team-row2-col2-inner-row1">
-                <h2>Leadership Team</h2>
-              </div>
-              <div class="team-row2-col2-inner-row2">
-                <a href=#><img src="img/team-leader.jpg" alt="leadership board thumbnail"></a>
-              </div>
-              <div class="team-row2-col2-inner-row3">
-                <p class="team-text"><a href=#>All Leadership Team Members</a></p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="team-row2-col4 spacer"></div>
-            
-          <div class="team-row2-col5">
-            <div class="team-row2-col5-inner">
-              <div class="team-row2-col5-inner-row1">
-                <h2>Oversight Board</h2>
-              </div>
-              <div class="team-row2-col5-inner-row2">
-                <a href=#><img src="img/team-oversight.jpg" alt="oversight board thumbnail"></a>
-              </div>
-              <div class="team-row2-col5-inner-row3">
-                <p class="team-text"><a href=#>All Oversight Board Members</a></p>
-              </div>
-            </div>
-          </div> 
         </div>
-        <!-- end of first row of images -->
         
-        <!-- Container for second row of images -->
-        <div class="team-row3">
-          
-          <div class="team-row3-col1">
-            <div class="team-row3-col1-inner">
-              <div class="team-row3-col1-inner-row1">
-                <h2>University Leads</h2>
-              </div>
-              <div class="team-row3-col1-inner-row2">
-                <a href=#><img src="img/team-univ-lead.jpg" alt="university lead thumbnail"></a>
-              </div>
-              <div class="team-row3-col1-inner-row3">
-                <p class="team-text"><a href=#>All University Leads</a></p>
-              </div>
+        <div class="row row2">
+          <div class="col-xs-12 col-sm-4 col-md-4 col col1">
+            <div class="rowa"><h2><p>Faculty</p><p class="invisible">.</p></h2></div>
+            <div class="rowb">
+              <img src="img/team-faculty.jpg" alt=teachers>
+            </div>
+            <div class="rowc">
+              <a href=#>View the Faculty</a>
             </div>
           </div>
-          
-          <div class="team-row3-col2 spacer"></div>
-          
-          <div class="team-row3-col3">
-            <div class="team-row3-col2-inner">
-              <div class="team-row3-col2-inner-row1">
-                <h2>Faculty</h2>
-              </div>
-              <div class="team-row3-col2-inner-row2">
-                <a href=#><img src="img/team-faculty.jpg" alt="faculty thumbnail"></a>
-              </div>
-              <div class="team-row3-col2-inner-row3">
-                <p class="team-text"><a href=#>All Faculty</a></p>
-              </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col col2">
+            <div class="rowa"><h2><p>Leadership</p><p>Team</p></h2></div>
+            <div class="rowb">
+              <img src="img/team-leader.jpg" alt="team leader">
+            </div>
+            <div class="rowc">
+              <a href=#>View the Leadership Team</a>
             </div>
           </div>
-          
-          <div class="team-row3-col4 spacer"></div>
-            
-          <div class="team-row3-col5">
-            <div class="team-row3-col5-inner">
-              <div class="team-row3-col5-inner-row1">
-                <h2>Search Members by Institution</h2>
-              </div>
-              <div class="team-row3-col5-inner-row2">
-                <a href=#><img src="img/team-university.jpg" alt="university building thumbnail"></a>
-              </div>
-              <div class="team-row3-col5-inner-row3">
-                <p class="team-text"><a href=#>Search all Institutions</a></p>
-              </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col col3">
+            <div class="rowa"><h2><p>University</p><p>Leads</p></h2></div>
+            <div class="rowb">
+              <img src="img/team-univ-lead.jpg" alt="university lead">
+            </div>
+            <div class="rowc">
+              <a href=#>View the University Leads</a>
             </div>
           </div>
         </div>
-        <!-- end of second row of images -->
-      </div>
+        
+        <div class="row row3">
+          <div class="col-xs-12 col-sm-4 col-md-4 col col1">
+            <div class="rowa"><h2><p>Advisory</p><p>Board</p></h2></div>
+            <div class="rowb">
+              <img src="img/team-advisory.jpg" alt="advisory board">
+            </div>
+            <div class="rowc">
+              <a href=#>View the Advisory Board</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col col2">
+            <div class="rowa"><h2><p>Oversight</p><p>Committee</p></h2></div>
+            <div class="rowb">
+              <img src="img/team-oversight.jpg" alt="oversight team">
+            </div>
+            <div class="rowc">
+              <a href=#>View the Oversight Committee</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col col3">
+            <div class="rowa"><h2><p>Search By</p><p>University</p></h2></div>
+            <div class="rowb">
+              <img src="img/team-university.jpg" alt="university">
+            </div>
+            <div class="rowc">
+              <a href=#>Search By University Affiliation</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Main Body -->
       
-      <aside>
-        <div class="aside-inner">
-          <div class="aside-inner-row1">
-            <p>"The global environment crisis is, as we say in Tennessee, real as rain, and I cannot stand the thought of leaving my children with a degraded earth and a diminished future."</p>
+      <!-- Aside Quote Container -->
+      <aside class="container quote">
+        <div class="inner-box">
+          <div class="row aside-row1">
+            <div class="col-md-12">
+              <p>"It really matters whether people are working on generating clean energy or improving transportation or making the Internet work better and all those things. And small groups of people can have a really huge impact."</p>
+            </div>
           </div>
-          <div class="aside-inner-row1">
-            <p>- Al Gore, Former Vice President of the United States of America, author, environmentalist, and Nobel Peace Prize recipient (2007)</p>
+          <div class="row aside-row2">
+            <div class="col-md-12">
+              <p>- Larry Page, Co-Founder of Google.</p>
+            </div>
           </div>
         </div>
       </aside>
-      
+      <!-- End of Aside Quote Container -->
     </main>
-    <!-- End of Main Body -->
     
     <!-- Container for the Footer -->
-    <footer class="footer">
-      <div class="footer-col1">
-        <h2>Research</h2>
-        <a href=#><p class="footertext">Fields</p></a>
-        <a href=#><p class="footertext">Research Opportunities</p></a>
-        <a href=#><p class="footertext">Centers and Programs</p></a>
+    <footer class="container footer">
+      <div class="row footer-row1">
+        <div class="col-xs-6 col-sm-3 col-md-3 footer-col">
+          <h5>News and Events</h5>
+          <a href=#><p class="footertext">Fields</p></a>
+          <a href=#><p class="footertext">Grants</p></a>
+          <a href=#><p class="footertext">Centers and Programs</p></a>
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-3 footer-col">
+          <h5>Education</h5>
+          <a href=#><p class="footertext">Courses</p></a>
+          <a href=#><p class="footertext">Energy Degrees</p></a>
+          <a href=#><p class="footertext">Energy Employment</p></a>
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-3 footer-col">
+          <h5>Research</h5>
+          <a href=#><p class="footertext">Newsletter</p></a>
+          <a href=#><p class="footertext">Subscribe</p></a>
+          <a href=#><p class="footertext">Upcoming Events</p></a>
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-3 footer-col">
+          <h5>Social Media</h5>
+          <a href="https://www.facebook.com/FLEnergySC/"><img class="fb social" src="img/foot-fb-72.png" alt="facebook"></a>
+          <a href="https://twitter.com/FESC_UF"><img class="tw social" src="img/foot-tw-400.png" alt="twitter" width="72" height="72"></a>
+        </div>
       </div>
-      <div class="footer-col2">
-        <h2>Education and Employment</h2>
-        <a href=#><p class="footertext">Energy Degrees</p></a>
-        <a href=#><p class="footertext">Energy Employment</p></a>
-      </div>
-      <div class="footer-col3">
-        <h2>Social Media</h2>
-        <a href="https://www.facebook.com/FLEnergySC/"><img class="fb" src="img/foot-fb-72.png" alt="facebook"></a>
-        <a href="https://twitter.com/FESC_UF"><img class="tw" src="img/foot-tw-400.png" alt="twitter" width="72" height="72"></a>
+      
+      <div class="row footer-row2">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <ul class="footer-list footer-list1">
+            <li><a href=#>FESC Home</a></li>
+            <li><a href=#>Maps and Directions</a></li>
+            <li><a href=#>Search FESC</a></li>
+          </ul>
+          <ul class="footer-list footer-list2">
+            <li><a href=#>Terms of Use</a></li>
+            <li><a href=#>Privacy</a></li>
+            <li><a href=#>Copyright</a></li>
+            <li><a href=#>Trademarks</a></li>
+            <li><a href=#>Non-Discrimination</a></li>
+            <li><a href=#>Accessibility</a></li>
+          </ul>
+        </div>
       </div>
     </footer>
     <!-- End of Footer -->
