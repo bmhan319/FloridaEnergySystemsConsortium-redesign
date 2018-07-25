@@ -1,0 +1,538 @@
+body {
+  font-family: "Lato", sans-serif; }
+
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.row {
+  margin: 0;
+  padding: 0;
+  border-width: 0; }
+
+/*-- Title Bar --*/
+.slogan-bar {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 22px;
+  background-color: #618b44;
+  top: 0;
+  left: 0; }
+
+.slogan-bar-col2 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 22px;
+  background-color: #618b44;
+  top: 0;
+  left: 0; }
+
+.slogan-bar-col2 a {
+  color: #ffffff;
+  padding: 0 0 0 15px;
+  text-decoration: none; }
+
+/*-- End Title Bar --*/
+/*-- Logo Bar & Search Bar --*/
+.logo-bar {
+  background-image: url("../img/molecule.jpg");
+  background-size: cover;
+  background-color: #bdd4e7;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0; }
+
+.logo {
+  text-align: left; }
+
+.top-menu ul {
+  list-style: none;
+  padding: 10px 0;
+  text-align: right; }
+
+.top-menu ul li {
+  display: inline;
+  margin: 1px 0; }
+
+.left a {
+  padding: 0 10px 0 0; }
+
+.middle a {
+  border-left-style: solid;
+  border-right-style: solid;
+  border-width: 1px;
+  padding: 0 10px; }
+
+.right a {
+  padding: 0 0 0 10px; }
+
+.top-menu ul li a {
+  color: #5c5c5c;
+  font-weight: 400;
+  font-size: 1.5rem; }
+
+.top-menu ul li a:hover {
+  color: #5c5c5c;
+  font-weight: bold;
+  text-decoration: underline; }
+
+.search {
+  text-align: right; }
+
+/*-- End Logo Bar & Search Bar --*/
+/* -- Nav Bar -- */
+.navbar {
+  background-color: #f0f0f0;
+  width: 100%;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-color: #8693AB;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0 auto;
+  display: inline-block; }
+
+.navbar li {
+  margin: 0;
+  padding: 0;
+  width: 12%;
+  text-align: center; }
+
+.navbar li a {
+  line-height: 46px;
+  color: #5c5c5c; }
+
+.navbar li:hover {
+  background: #618b44; }
+
+.navbar li a:hover {
+  color: #ffffff; }
+
+.navbar li li a {
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  line-height: 26px; }
+
+/*--- Sublist Styles ---*/
+.navbar ul {
+  position: absolute;
+  padding: 0px;
+  display: none;
+  list-style: none;
+  width: 100%;
+  z-index: 90; }
+
+.navbar li li {
+  background-color: #A3D77F;
+  width: 100%;
+  padding: 0; }
+
+/*--- Sublevel UL's display and position on hover ---*/
+.navbar li:hover ul {
+  display: block; }
+
+/* -- End Nav Bar -- */
+/* -- Image -- */
+.image-bar {
+  width: 100%;
+  position: static; }
+
+.image {
+  width: 100%;
+  height: auto; }
+
+/* -- End Image -- */
+/* -- Aside -- */
+.quote {
+  width: 30%;
+  display: block;
+  background-color: #f0f0f0; }
+
+.inner-box {
+  margin: 118px 8% 0% 0%;
+  padding: 5%;
+  background-color: #ffffff;
+  border-radius: 10px; }
+
+.aside-row1:first-child {
+  font-style: italic;
+  font-weight: 300; }
+
+/* -- End of Aside -- */
+/* -- Footer -- */
+.footer {
+  width: 100%;
+  display: block; }
+
+.footer-row1 {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #8693AB;
+  background-color: #bdd4e7;
+  text-align: center;
+  width: 100%;
+  padding: 0 0 10px 0; }
+
+.footer-col h5 {
+  color: #5c5c5c; }
+
+.footer-col a {
+  color: #5c5c5c; }
+
+.footertext {
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem; }
+
+.social {
+  width: 35px;
+  height: 30px;
+  padding: 0 1% 0 0; }
+
+.footer-row2 {
+  background-color: #bdd4e7;
+  text-align: center;
+  padding: 10px 0 0 0; }
+
+.footer-list {
+  list-style: none;
+  padding: 0 0 10px 0;
+  margin: 0 0 0 0; }
+
+.footer-list1 {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.footer-list li {
+  display: inline; }
+
+.footer-list li a {
+  font-weight: 400; }
+
+.footer-list1 li a {
+  color: #5c5c5c;
+  font-weight: 400;
+  padding: 0 10px; }
+
+.footer-list2 li a {
+  color: #5c5c5c;
+  font-weight: 400;
+  padding: 0 10px;
+  font-size: 1.2rem; }
+
+/* -- End Footer -- */
+/* -- Main Body -- */
+.main-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0; }
+
+.research-body {
+  display: block;
+  background-color: #f0f0f0;
+  padding: 0 3% 3% 3%; }
+
+.body-row1-col1 {
+  padding: 0;
+  margin: 0 0 20px 0; }
+
+.body-row2 {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  border-radius: 25px; }
+
+.heading1, .rowa h4 {
+  font-weight: 400;
+  color: #5c5c5c; }
+
+.colb ul {
+  list-style: none;
+  padding: 0 0 0 10px;
+  text-align: left; }
+
+.research-rowb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.research-cola img {
+  width: 175px;
+  height: 175px; }
+
+.colb ul li {
+  line-height: 3rem; }
+
+.colb ul li a {
+  text-decoration: none;
+  color: #618b44; }
+
+.colb ul li a:hover {
+  text-decoration: none;
+  color: #283E18; }
+
+/* -- End of Main Body -- */
+/*-- 992Px Media Query --*/
+@media screen and (max-width: 992px) {
+  /* -------------COMPONENTS-------------*/
+  /*-- Logo Bar & Search Bar --*/
+  .top-menu ul li a {
+    font-size: 1.25rem; }
+
+  /*-- End Logo Bar & Search Bar --*/
+  /* -- Nav Bar -- */
+  .navbar li {
+    width: 13%; }
+
+  /* -- End Nav Bar -- */
+  /* -- Aside -- */
+  .inner-box {
+    margin: 108px 8% 0% 0%; }
+
+  /* -- End of Aside -- */
+  /* -- Footer -- */
+  .footer-row1 {
+    padding: 0 0 10px 4%; }
+
+  /* -- End Footer -- */
+  /* -------------END COMPONENTS-------------*/
+  /* -------------SPECIFIC PAGES-------------*/
+  /* ----------INDEX PAGE----------*/
+  /* -- Upper Body -- */
+  /* -- Video Container -- */
+  .main-top-left {
+    margin: 3% 3% 3% 3%; }
+
+  /* -- End Video Container -- */
+  /* -- Article Container -- */
+  .main-top-right {
+    width: 29%;
+    margin: 3% 3% 3% 1%; }
+
+  /* -- End Article Container -- */
+  /* -- End Upper Body Container -- */
+  /* -- Lower Body Container -- */
+  .main-col a img {
+    width: 180px;
+    height: 180px; }
+
+  /* -- End Lower Body Container -- */
+  /* ----------END INDEX PAGE----------*/
+  /* ----------RESEARCH PAGE----------*/
+  /* -- Main Body -- */
+  .research-cola img {
+    width: 130px;
+    height: 130px; }
+
+  .colb ul li {
+    line-height: 2.5rem; }
+
+  /* -- End of Main Body -- */
+  /* ----------END RESEARCH PAGE----------*/
+  /* --------------TEAM PAGE--------------*/
+  /* -- Main Body -- */
+  .rowb img {
+    width: 130px; }
+
+  /* -- End of Main Body -- */
+  /* -----------END TEAM PAGE--------------*/ }
+/* -- End 992Px Media Query -- */
+/*-- 768Px Media Query --*/
+@media screen and (max-width: 768px) {
+  /* -------------COMPONENTS-------------*/
+  /*-- Logo Bar & Search Bar --*/
+  .logo-bar {
+    background-image: url(""); }
+
+  .logo {
+    text-align: center; }
+
+  .top-menu ul {
+    padding: 0;
+    text-align: center; }
+
+  .top-menu ul li {
+    display: block;
+    padding: 2px 0;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-color: #8693AB; }
+
+  .top-menu ul li a {
+    color: #5c5c5c;
+    font-weight: 400;
+    font-size: 1.25rem;
+    display: block; }
+
+  .middle a {
+    border-left-style: none;
+    border-right-style: none;
+    border-width: 0px;
+    padding: 0px; }
+
+  .top-menu ul .right {
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-color: #8693AB; }
+
+  .search {
+    padding: 0 0 10px 0;
+    text-align: center; }
+
+  .text {
+    width: 60%; }
+
+  /*-- End Logo Bar & Search Bar --*/
+  /* -- Nav Bar -- */
+  .navbar {
+    display: block; }
+
+  .navbar li {
+    padding: 2px 0;
+    width: 100%;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-color: #8693AB; }
+
+  .navbar li a {
+    line-height: 23px; }
+
+  .navbar:first-child {
+    border-top-style: none; }
+
+  .navbar li:first-child {
+    padding: 0; }
+
+  /* -- End Nav Bar -- */
+  /* -- Aside -- */
+  .quote {
+    width: 100%; }
+
+  .inner-box {
+    margin: 0;
+    padding: 3%;
+    border-radius: 0; }
+
+  /* -- End Aside -- */
+  /* -- Footer Container -- */
+  .footer-col h5 {
+    padding: 30px 0 0 0; }
+
+  .footertext {
+    padding: 0 0 10px 0;
+    margin: 0; }
+
+  .footer-row2 {
+    padding: 0 0 20px 0; }
+
+  .footer-list1 {
+    padding: 10px 0 20px 0;
+    margin: 0 0 0 0; }
+
+  /* -- End Footer -- */
+  /* -------------END COMPONENTS-------------*/
+  /* -------------SPECIFIC PAGES-------------*/
+  /* -------------INDEX PAGE-------------*/
+  /* -- Upper Body -- */
+  /* -- Video Container -- */
+  .main-top-left {
+    width: 94%;
+    margin: 3% 3%;
+    padding: 1% 7%; }
+
+  .main-top-left h2 {
+    font-weight: 400;
+    text-align: center; }
+
+  /* -- End Video Container -- */
+  /* -- Article Container -- */
+  .main-top-right {
+    width: 94%;
+    margin: 0 3% 3% 3%; }
+
+  .main-top-right h2 {
+    font-weight: 400;
+    text-align: center; }
+
+  .content {
+    text-align: center; }
+
+  /* -- End Article Container -- */
+  /* -- End Upper Body -- */
+  /* -- Mid Body Container -- */
+  .main-middle {
+    display: block; }
+
+  /* -- Upcoming Events -- */
+  .main-middle-left {
+    width: 94%;
+    margin: 0 3%; }
+
+  /* -- End Upcoming Events -- */
+  /* -- Facilities -- */
+  .main-middle-right {
+    width: 94%;
+    margin: 0 3%; }
+
+  /* -- End Facilities -- */
+  /* -- End Mid Body Container -- */
+  /* -- Lower Body Container -- */
+  .main-col a img {
+    width: 180px;
+    height: 180px; }
+
+  /* -- End Lower Body Container -- */
+  /* -------------END INDEX PAGE-------------*/
+  /* -------------RESEARCH PAGE-------------*/
+  /* -- Main Body -- */
+  .main-body {
+    display: block; }
+
+  .body-row2 {
+    border-radius: 0px; }
+
+  .colb ul li {
+    line-height: 2.5rem; }
+
+  .research-cola img {
+    width: 130px;
+    height: 130px; }
+
+  /* -- End Main Body -- */
+  /* -------------END RESEARCH PAGE-------------*/
+  /* --------------TEAM PAGE--------------*/
+  .main-body {
+    display: block; }
+
+  .row2, .row3 {
+    display: block; }
+
+  .col {
+    width: 100%;
+    border-radius: 0px; }
+
+  .col:hover {
+    border-style: none;
+    border-width: 0; }
+
+  .rowb img {
+    width: 300px; }
+
+  /* --------------END TEAM PAGE--------------*/ }
+/*-- End 768Px Media Query --*/
+
+/*# sourceMappingURL=research.css.map */

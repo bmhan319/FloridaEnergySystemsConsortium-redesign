@@ -1,0 +1,22 @@
+@mixin card ($bg-color){
+  box-shadow: gray 3px 3px 8px;
+    background-color: $bg-color;
+}
+
+.cta {
+    @include card(#C0FABE);
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1rem;
+    justify-content: center;
+    align-items: space-around;
+    margin: 1rem;
+    img {
+      max-width: 300px;
+    }
+    a {
+      text-decoration: none;
+      color: $brand;
+    }
+  }

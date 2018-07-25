@@ -1,0 +1,14 @@
+body {
+  font-family: $base-font;
+}
+
+.container {
+  @include spacing;
+  width: 100%;
+  display:flex;
+}
+
+.row {
+  @include spacing;
+  border-width: 0;
+}
