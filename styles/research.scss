@@ -1,0 +1,95 @@
+//Mixins
+@mixin spacing {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin main-links {
+  text-decoration: none;
+  color: $link-body;
+}
+
+@mixin main-hover {
+  text-decoration: none;
+  color: $link-body-hover;
+}
+
+@mixin headline {
+  font-weight:400;
+  color: $headline;
+}
+
+//Globals
+@import 'globals/colors';
+@import 'globals/typography';
+
+//Componants
+@import 'components/full-body';
+@import 'components/header';
+@import 'components/nav';
+@import 'components/image-bar';
+@import 'components/aside';
+@import 'components/footer';
+
+
+
+/* -- Main Body -- */
+.main-body {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.research-body {
+  display: block;
+  background-color: $background1;
+  padding: 0 3% 3% 3%;
+  
+}
+
+.body-row1-col1 {
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.body-row2 {
+  @include spacing;
+  background-color: $background2;
+  border-radius: 25px;
+}
+
+.heading1, .rowa h4 {
+  @include headline;
+}
+
+.colb ul {
+  list-style: none;
+  padding:0 0 0 10px;
+  text-align: left;
+}
+
+.research-rowb {
+  display: flex;
+}
+
+.research-cola img {
+  width: 175px;
+  height: 175px;
+}
+
+.colb ul li {
+    line-height: 3rem;
+}
+
+.colb ul li a {
+    @include main-links;
+}
+
+.colb ul li a:hover {
+    @include main-hover;
+}
+/* -- End of Main Body -- */
+
+
+
+
+@import 'components/responsive-css';

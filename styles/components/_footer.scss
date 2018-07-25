@@ -1,0 +1,74 @@
+/* -- Footer -- */
+.footer {
+  width: 100%;
+  display:block;
+}
+
+.footer-row1 {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: $border;
+  background-color: $main /*#618b44*/;
+  text-align: center;
+  width: 100%;
+  padding: 0 0 10px 0;
+}
+
+.footer-col h5 {
+  color: $headline;
+}
+
+.footer-col a {
+  color: $link-header;
+}
+
+.footertext {
+  @include spacing;
+  font-size: 1.1rem;
+}
+
+.social {
+  width:35px;
+  height: 30px;
+  padding: 0 1% 0 0;
+}
+
+.footer-row2 {
+  background-color: $main;
+  text-align: center;
+  padding:10px 0 0 0;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0 0 10px 0;
+  margin: 0 0 0 0;
+}
+
+.footer-list1 {
+  list-style: none;
+  @include spacing;
+}
+
+.footer-list li {
+  display: inline;
+}
+
+.footer-list li a{
+  font-weight: 400;
+}
+
+.footer-list1 li a{
+  color: $link-header;
+  font-weight: 400;
+  padding: 0 10px;
+}
+
+.footer-list2 li a{
+  color: $link-header;
+  font-weight: 400;
+  padding: 0 10px;
+  font-size: 1.2rem;
+  
+}
+/* -- End Footer -- */

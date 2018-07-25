@@ -1,0 +1,63 @@
+/* -- Nav Bar -- */
+.navbar {
+  background-color: $background1;
+  width: 100%;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-color: $border;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  display:flex;  
+  list-style:none;
+  margin:0 auto;
+  display:inline-block;
+}
+
+.navbar li {
+  @include spacing;
+  width:12%;
+  text-align: center;
+}
+
+.navbar li a {
+  line-height: 46px;
+  color: $link-header;
+}
+
+.navbar li:hover {
+  background:$accent1;
+}
+
+.navbar li a:hover {
+color: $accent1-text;
+}
+
+.navbar li li a {
+  display:block;
+  font-size:12px;
+  text-align: center;
+  line-height: 26px;
+}
+    
+
+/*--- Sublist Styles ---*/
+.navbar ul {
+    position:absolute;
+    padding:0px;
+    display:none;
+    list-style: none;
+    width: 100%;
+    z-index: 90;
+}
+
+.navbar li li { 
+  background-color: $accent1-sub;
+  width: 100%;
+  padding:0;
+  
+}
+
+/*--- Sublevel UL's display and position on hover ---*/
+.navbar li:hover ul {display:block;} 
+
+/* -- End Nav Bar -- */
