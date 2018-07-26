@@ -1,0 +1,2 @@
+Fix Nav Bar in smallest responsive size
+apply nesting in sass coding
