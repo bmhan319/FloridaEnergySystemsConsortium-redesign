@@ -182,6 +182,10 @@
     .navbar li:first-child {
       padding: 0;
     }
+  
+    .navbar .dropdown .dropdown-content {
+      position:relative;
+  }
     /* -- End Nav Bar -- */
   
     /* -- Aside -- */
