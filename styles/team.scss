@@ -22,6 +22,7 @@
 //Globals
 @import 'globals/colors';
 @import 'globals/typography';
+@import 'globals/container';
 
 //Componants
 @import 'components/full-body';
@@ -59,15 +60,13 @@
   margin:0 2% 2% 0;
   padding: 0 auto;
   text-align: center;
-  border-radius: 25px;
+  border-radius: $container-radius;
   border-style: solid;
-  border-width: 2px;
+  border-width: $border-width;
   border-color: $background1;
 }
 
 .col:hover {
-  border-style: solid;
-  border-width: 2px;
   border-color: $accent2;
 }
 
@@ -77,6 +76,7 @@
 
 .rowb img {
   width: 180px;
+  border-radius: $element-radius;
 }
 
 .rowc a {

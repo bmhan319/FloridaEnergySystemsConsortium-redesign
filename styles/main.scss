@@ -22,6 +22,7 @@
 //Globals
 @import 'globals/colors';
 @import 'globals/typography';
+@import 'globals/container';
 
 //Componants
 @import 'components/full-body';
@@ -45,12 +46,13 @@
 
 /* -- Video Container -- */
 .main-top-left {
+  border-radius: $container-radius;
   width:61%;
   height: 386px;
   margin:3% 3% 3% 6%;
   padding: 1% 7% 2% 7%;
   background-color: $background2;
-  display: flow-root
+  display: flow-root;
 }
 
 .main-top-left h2 {
@@ -74,7 +76,8 @@
   margin:3% 6% 3% 1%;
   padding: 1%;
   position: relative;
-  display: block
+  display: block;
+  border-radius: $container-radius;
 }
 
 .main-top-right h2 {
@@ -163,6 +166,7 @@
   height:60px;
   background-color: $accent2;
   padding: auto 0;
+  border-radius: $element-radius;
 }
 
 .row1-col1 p {
@@ -246,6 +250,7 @@
 
 .facility-content1 img {
   width: 100%;
+  border-radius: $element-radius;
 }
 
 .facility-content2 h3 a{
@@ -284,17 +289,17 @@
   margin: 0 auto;
   padding: 0% 0% 0 0%;
 }
+
 .main-col a img {
   width: 220px;
   height:220px;
   border-style:solid;
-  border-width: 2px;
+  border-width: $border-width;
+  border-radius: 10px;
   border-color: $background1;
 }
 
 .main-col a img:hover {
-  border-style:solid;
-  border-width: 2px;
   border-color: $accent2;
 }
 /* -- End Lower Body -- */
