@@ -227,6 +227,7 @@ body {
 
 /* -- Video Container -- */
 .main-top-left {
+  border-radius: 15px;
   width: 61%;
   height: 386px;
   margin: 3% 3% 3% 6%;
@@ -254,7 +255,8 @@ body {
   margin: 3% 6% 3% 1%;
   padding: 1%;
   position: relative;
-  display: block; }
+  display: block;
+  border-radius: 15px; }
 
 .main-top-right h2 {
   font-weight: 400;
@@ -336,7 +338,8 @@ body {
   width: 50px;
   height: 60px;
   background-color: #FF8811;
-  padding: auto 0; }
+  padding: auto 0;
+  border-radius: 5px; }
 
 .row1-col1 p {
   text-align: center;
@@ -413,7 +416,8 @@ body {
   width: 100%; }
 
 .facility-content1 img {
-  width: 100%; }
+  width: 100%;
+  border-radius: 5px; }
 
 .facility-content2 h3 a {
   width: 100%;
@@ -453,12 +457,11 @@ body {
   width: 220px;
   height: 220px;
   border-style: solid;
-  border-width: 2px;
+  border-width: 3px;
+  border-radius: 10px;
   border-color: #f0f0f0; }
 
 .main-col a img:hover {
-  border-style: solid;
-  border-width: 2px;
   border-color: #FF8811; }
 
 /* -- End Lower Body -- */
@@ -676,15 +679,15 @@ body {
     width: 180px;
     height: 180px; }
 
+  .main-col a img:hover {
+    border-color: #f0f0f0; }
+
   /* -- End Lower Body Container -- */
   /* -------------END INDEX PAGE-------------*/
   /* -------------RESEARCH PAGE-------------*/
   /* -- Main Body -- */
   .main-body {
     display: block; }
-
-  .body-row2 {
-    border-radius: 0px; }
 
   .colb ul li {
     line-height: 2.5rem; }
@@ -703,8 +706,7 @@ body {
     display: block; }
 
   .col {
-    width: 100%;
-    border-radius: 0px; }
+    width: 98%; }
 
   .col:hover {
     border-style: none;
