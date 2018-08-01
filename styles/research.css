@@ -183,14 +183,14 @@ body {
     left: -200%; }
   100% {
     left: -300%; } }
-div#slider {
+div.image-bar {
   overflow: hidden; }
 
-div#slider figure img {
+div.image-bar figure img {
   width: 25%;
   float: left; }
 
-div#slider figure {
+div.image-bar figure {
   position: relative;
   width: 400%;
   margin: 0;
