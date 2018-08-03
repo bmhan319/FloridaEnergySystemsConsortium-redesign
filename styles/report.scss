@@ -1,0 +1,91 @@
+//Mixins
+@mixin spacing {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin main-links {
+  text-decoration: none;
+  color: $link-body;
+}
+
+@mixin main-hover {
+  text-decoration: none;
+  color: $link-body-hover;
+}
+
+@mixin headline {
+  font-weight:400;
+  color: $headline;
+}
+
+//Globals
+@import 'globals/colors';
+@import 'globals/typography';
+@import 'globals/container';
+
+//Componants
+@import 'components/full-body';
+@import 'components/header';
+@import 'components/nav';
+@import 'components/image-bar';
+@import 'components/charts';
+@import 'components/footer';
+
+body {
+  max-width: $site-width;
+}
+
+/* -- Main Body -- */
+.main-body {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  height: auto;
+  width: 100%;
+  background-color: $background1;
+}
+.report-body {
+  width: 50%;
+  display: block;
+  padding: 0 0 3% 3%;
+}
+
+.body-row1-col1 {
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.heading1 {
+  @include headline;
+}
+
+.heading1 a {
+  @include main-links;
+}
+
+.heading1 a:hover {
+  @include main-hover;
+}
+
+.body-row2 {
+  width: 100%;
+}
+.body-row2-col1 {
+  width: 100%;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.energy-report {
+  max-width: 100%;
+  height: auto;
+}
+
+/* -- End of Main Body -- */
+
+
+
+
+@import 'components/responsive-css';
