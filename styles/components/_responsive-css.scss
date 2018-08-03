@@ -1,3 +1,27 @@
+/*-- 1251Px Media Query --*/
+@media screen and (max-width: 1251px) {
+  
+  /* -------------COMPONENTS--------------*/
+  /* -- Report Charts -- */
+  .chart-row1 {
+    margin: 169px 5% 100px 5%;
+  }
+  
+  #curve_chart, #curve_chart2 {
+    height: 350px;
+  }
+
+  /* -- End Report Charts -- */
+  /* -----------END COMPONENTS-------------*/
+}
+/*-- End 1251Px Media Query --*/ 
+  
+  
+  
+  
+  
+  
+  
 /*-- 992Px Media Query --*/
 @media screen and (max-width: 992px) {
   
@@ -18,7 +42,7 @@
 
   /* -- Aside -- */
   .inner-box {
-    margin:108px 8% 0% 0%;
+    margin:109px 8% 0% 0%;
   }
   /* -- End of Aside -- */
   
@@ -27,6 +51,16 @@
     padding: 0 0 10px 4%;
   }
   /* -- End Footer -- */
+  
+  /* -- Report Charts -- */
+  .chart-row1 {
+    margin: 160px 5% 100px 5%;
+  }
+
+  #curve_chart, #curve_chart2 {
+    height: 300px;
+  }
+  /* -- End Report Charts -- */
   
   /* -------------END COMPONENTS-------------*/
   
@@ -78,7 +112,7 @@
     }
     /* -- End of Main Body -- */
     /* -----------END TEAM PAGE--------------*/
-  
+
 }
 /* -- End 992Px Media Query -- */
 
@@ -199,6 +233,40 @@
       border-radius: 0;
     }
     /* -- End Aside -- */
+    
+    /* -- Report Charts -- */
+    .charts {
+      width: 100%;
+      padding: 0 3%;
+      margin:0;
+    }
+
+    .chart-row1 {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .col1 {
+      margin: 0;
+      padding:0 0 0 0;
+      width: 100%;
+      display: block;
+    }
+
+    #curve_chart, #curve_chart2 {
+      padding: 10px 0 20px 0;
+      margin: 0;
+      width: 100%;
+      max-width: 612px;
+      height: 400px;
+    }
+  
+    #curve_chart2 {
+      padding: 0 0 20px 0;
+    }
+      
+    /* -- End of Report Charts -- */
   
     /* -- Footer Container -- */
       .footer-col h5 {
@@ -325,6 +393,16 @@
       width: 300px;
     }
     /* --------------END TEAM PAGE--------------*/
+  
+    /* -------------REPORT PAGE--------------*/
+    /* -- Main Body -- */
+    .report-body {
+      width: 100%;
+      display: block;
+      padding: 0 3% 10px 3%;
+    }
+    /* -- End Main Body -- */
+    /* -----------END REPORT PAGE-------------*/
   
   
 }
