@@ -31,7 +31,9 @@
 @import 'components/image-bar';
 @import 'components/footer';
 
-
+body {
+  max-width: $site-width;
+}
 
 /* -- Main Body -- */
 .main-body {

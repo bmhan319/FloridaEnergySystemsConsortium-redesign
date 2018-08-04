@@ -32,7 +32,9 @@
 @import 'components/aside';
 @import 'components/footer';
 
-
+body {
+  max-width: $site-width;
+}
 
 /* -- Main Body -- */
 .main-body {

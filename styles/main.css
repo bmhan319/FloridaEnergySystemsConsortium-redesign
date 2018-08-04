@@ -264,6 +264,9 @@ div.image-bar figure {
   font-size: 1.2rem; }
 
 /* -- End Footer -- */
+body {
+  max-width: 1300px; }
+
 /* -- Main Body -- */
 .main-body {
   display: block; }
@@ -515,6 +518,19 @@ div.image-bar figure {
 /* -- End Lower Body -- */
 /* -- End Main Body -- */
 /* -- Repsonsive Sizing -- */
+/*-- 1251Px Media Query --*/
+@media screen and (max-width: 1251px) {
+  /* -------------COMPONENTS--------------*/
+  /* -- Report Charts -- */
+  .chart-row1 {
+    margin: 169px 5% 100px 5%; }
+
+  #curve_chart, #curve_chart2 {
+    height: 350px; }
+
+  /* -- End Report Charts -- */
+  /* -----------END COMPONENTS-------------*/ }
+/*-- End 1251Px Media Query --*/
 /*-- 992Px Media Query --*/
 @media screen and (max-width: 992px) {
   /* -------------COMPONENTS-------------*/
@@ -530,7 +546,7 @@ div.image-bar figure {
   /* -- End Nav Bar -- */
   /* -- Aside -- */
   .inner-box {
-    margin: 108px 8% 0% 0%; }
+    margin: 109px 8% 0% 0%; }
 
   /* -- End of Aside -- */
   /* -- Footer -- */
@@ -538,6 +554,14 @@ div.image-bar figure {
     padding: 0 0 10px 4%; }
 
   /* -- End Footer -- */
+  /* -- Report Charts -- */
+  .chart-row1 {
+    margin: 160px 5% 100px 5%; }
+
+  #curve_chart, #curve_chart2 {
+    height: 300px; }
+
+  /* -- End Report Charts -- */
   /* -------------END COMPONENTS-------------*/
   /* -------------SPECIFIC PAGES-------------*/
   /* ----------INDEX PAGE----------*/
@@ -660,6 +684,34 @@ div.image-bar figure {
     border-radius: 0; }
 
   /* -- End Aside -- */
+  /* -- Report Charts -- */
+  .charts {
+    width: 100%;
+    padding: 0 3%;
+    margin: 0; }
+
+  .chart-row1 {
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+
+  .col1 {
+    margin: 0;
+    padding: 0 0 0 0;
+    width: 100%;
+    display: block; }
+
+  #curve_chart, #curve_chart2 {
+    padding: 10px 0 20px 0;
+    margin: 0;
+    width: 100%;
+    max-width: 612px;
+    height: 400px; }
+
+  #curve_chart2 {
+    padding: 0 0 20px 0; }
+
+  /* -- End of Report Charts -- */
   /* -- Footer Container -- */
   .footer-col h5 {
     padding: 30px 0 0 0; }
@@ -763,7 +815,16 @@ div.image-bar figure {
   .rowb img {
     width: 300px; }
 
-  /* --------------END TEAM PAGE--------------*/ }
+  /* --------------END TEAM PAGE--------------*/
+  /* -------------REPORT PAGE--------------*/
+  /* -- Main Body -- */
+  .report-body {
+    width: 100%;
+    display: block;
+    padding: 0 3% 10px 3%; }
+
+  /* -- End Main Body -- */
+  /* -----------END REPORT PAGE-------------*/ }
 /*-- End 768Px Media Query --*/
 
 /*# sourceMappingURL=main.css.map */
