@@ -1,0 +1,27 @@
+/* -- Aside Charts -- */
+.charts {
+  width: 50%;
+}
+
+.chart-row1 {
+  width: 100%;
+  margin: 149px 5% 100px 5%;
+}
+
+.col1 {
+  margin: 0;
+  padding:0;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+#curve_chart, #curve_chart2 {
+  width: 96%;
+  height: 400px;
+  margin: 0 2%;
+  text-align: center;
+  padding: 0 0 10px 0;
+}
+
+/* -- End of Aside Charts -- */
