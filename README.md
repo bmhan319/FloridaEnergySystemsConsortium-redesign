@@ -16,10 +16,12 @@ Charts
 Added  a couple charts on the "NavBar--> About US--> Energy Reports" page using Google Charts.
 
 Chart 1 - Line Chart - https://developers.google.com/chart/interactive/docs/gallery/linechart
+
 Options Used: title, curveType, legend, colors
 
 
 Chart 2 - Scatter Chart - https://developers.google.com/chart/interactive/docs/gallery/scatterchart
+
 Options Used: title, hAxis, vAxis, legend
 
 
