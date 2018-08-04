@@ -70,6 +70,7 @@ google.charts.load('current', {'packages':['corechart']});
           title: 'Florida Energy Production',
           hAxis: {title: 'Year'},
           vAxis: {title: 'BTUs (in billions)'},
+          colors: ['#618b44'],
           legend: 'none',
         };
 
