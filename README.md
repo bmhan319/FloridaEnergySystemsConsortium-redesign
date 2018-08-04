@@ -21,6 +21,7 @@ Options Used: title, curveType, legend, colors
 
 
 
+
 Chart 2 - Scatter Chart - https://developers.google.com/chart/interactive/docs/gallery/scatterchart
 
 Options Used: title, hAxis, vAxis, legend
