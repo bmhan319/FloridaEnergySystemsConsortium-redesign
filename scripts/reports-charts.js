@@ -68,12 +68,12 @@ google.charts.load('current', {'packages':['corechart']});
         
         var options = {
           title: 'Florida Energy Production',
-          curveType: 'function',
-          legend: { position: 'bottom' },
-          colors: ['#618b44']
+          hAxis: {title: 'Year'},
+          vAxis: {title: 'BTUs (in billions)'},
+          legend: 'none',
         };
 
-        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+        var chart = new google.visualization.ScatterChart(document.getElementById('curve_chart'));
 
         chart.draw(data, options);
       }
