@@ -16,9 +16,11 @@ Charts
 Added a couple charts on the "NavBar--> About US--> Energy Reports" page using Google Charts.
 
 Chart 1 - Line Chart - https://developers.google.com/chart/interactive/docs/gallery/linechart
+
 Options Used: title, curveType, legend, colors
 
 Chart 2 - Scatter Chart - https://developers.google.com/chart/interactive/docs/gallery/scatterchart
+
 Options Used: title, hAxis, vAxis, legend, colors
 
 Due to the types of values that were being plotted, only a handful of charts made sense to use. With only "Year" and "BTUs" as plot points, line graphs, scatter graphs and bar graphs were the best options. And with having 48 years to plot, the bar graph would've looked overcrowded so the remaining two options were used.
