@@ -1,164 +1,102 @@
-google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-      google.charts.setOnLoadCallback(drawChart2);
-
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Year' , 'BTUs (in billions)'],
-          ['1960' ,35680],
-          ['1961' ,34417],
-          ['1962' ,35826],
-          ['1963' ,38613],
-          ['1964' ,39016],
-          ['1965' ,39916],
-          ['1966' ,42760],
-          ['1967' ,44550],
-          ['1968' ,49556],
-          ['1969' ,51489],
-          ['1970' ,51035],
-          ['1971' ,49968],
-          ['1972' ,54389],
-          ['1973' ,56250],
-          ['1974' ,52429],
-          ['1975' ,50007],
-          ['1976' ,56507],
-          ['1977' ,59953],
-          ['1978' ,65357],
-          ['1979' ,69419],
-          ['1980' ,90049],
-          ['1981' ,83117],
-          ['1982' ,104674],
-          ['1983' ,91705],
-          ['1984' ,108740],
-          ['1985' ,110698],
-          ['1986' ,116356],
-          ['1987' ,107606],
-          ['1988' ,113802],
-          ['1989' ,232261],
-          ['1990' ,198986],
-          ['1991' ,212955],
-          ['1992' ,230779],
-          ['1993' ,217028],
-          ['1994' ,215563],
-          ['1995' ,220211],
-          ['1996' ,240343],
-          ['1997' ,231308],
-          ['1998' ,205485],
-          ['1999' ,204114],
-          ['2000' ,194952],
-          ['2001' ,158038],
-          ['2002' ,174327],
-          ['2003' ,188473],
-          ['2004' ,179462],
-          ['2005' ,183175],
-          ['2006' ,185564],
-          ['2007' ,190489],
-          ['2008' ,195232],
-          ['2009' ,213642],
-          ['2010' ,223518],
-          ['2011' ,222956],
-          ['2012' ,220020],
-          ['2013' ,229666],
-          ['2014' ,226863],
-          ['2015' ,234192],
-          ['2016' ,241264],
-          ['2017' ,248952],
-          ['2018' ,239657]
-        ]);
-        
-        var options = {
-          title: 'Florida Energy Production',
-          hAxis: {title: 'Year'},
-          vAxis: {title: 'BTUs (in billions)'},
-          colors: ['#618b44'],
-          legend: 'none',
-        };
-
-        var chart = new google.visualization.ScatterChart(document.getElementById('curve_chart'));
-
-        chart.draw(data, options);
-      }
+// 1 DomContentLoad
+// 2 Google Cahrt
+// 3 Get API DAta
+// 4 Receive API DAta
+// 5 Draw Chart
 
 
-      function drawChart2() {
-        var flippedData = [  
-          ['2018', 812277],
-          ['2017', 809363],
-          ['2016', 804283],
-          ['2015', 803865],
-          ['2014', 771379],
-          ['2013', 757189],
-          ['2012', 752941],
-          ['2011', 768009],
-          ['2010', 788887],
-          ['2009', 766848],
-          ['2008', 771702],
-          ['2007', 788461],
-          ['2006', 778685],
-          ['2005', 767622],
-          ['2004', 745810],
-          ['2003', 741696],
-          ['2002', 718136],
-          ['2001', 684966],
-          ['2000', 668216],
-          ['1999', 638966],
-          ['1998', 639254],
-          ['1997', 597240],
-          ['1996', 586291],
-          ['1995', 571483],
-          ['1994', 544365],
-          ['1993', 521176],
-          ['1992', 501598],
-          ['1991', 499299],
-          ['1990', 489741],
-          ['1989', 472473],
-          ['1988', 444382],
-          ['1987', 417862],
-          ['1986', 398095],
-          ['1985', 379307],
-          ['1984', 353246],
-          ['1983', 329216],
-          ['1982', 315744],
-          ['1981', 317921],
-          ['1980', 309694],
-          ['1979', 295551],
-          ['1978', 289031],
-          ['1977', 270767],
-          ['1976', 252408],
-          ['1975', 242096],
-          ['1974', 235482],
-          ['1973', 237104],
-          ['1972', 209665],
-          ['1971', 188564],
-          ['1970', 171346],
-          ['1969', 153032],
-          ['1968', 135509],
-          ['1967', 119314],
-          ['1966', 108610],
-          ['1965', 95878],
-          ['1964', 87016],
-          ['1963', 78258],
-          ['1962', 71216],
-          ['1961', 62705],
-          ['1960', 57344],
-          ['Year', 'BTUs (in billions)']
-        ];
-        var fixedData = flippedData.reverse();
-        var data = google.visualization.arrayToDataTable(fixedData)
-        
-        var options = {
-          title: 'Florida Electrictiy Consumption',
-          curveType: 'function',
-          legend: { position: 'bottom' },
-          colors: ['#FF8811']
-        };
+function onDOMLoad() {
+  google.charts.load('current', {'packages':['corechart']});
+  google.charts.setOnLoadCallback(getData);
+  google.charts.setOnLoadCallback(getData2);
+}
 
-        var chart = new google.visualization.LineChart(document.getElementById('curve_chart2'));
+document.addEventListener("DOMContentLoaded", onDOMLoad);
 
-        chart.draw(data, options);
-      }
+function getData() {
+  let request = new XMLHttpRequest();
+  let requestUrl = "https://api.eia.gov/series/?api_key=ffdbc2ac0fd91596a58b9cf3fb6c29bd&series_id=SEDS.REPRB.FL.A"
+  request.open('GET', requestUrl, true)
+  request.onload = function(){
+    console.log("response from server is: ", request)
+    if (request.status !== 200) {
+      console.log("Something is wrong", request);
+      return;
+    }
+    let response = JSON.parse(request.response);
+    drawChart(response.series[0].data);
+  }
+  
+  request.error = function(err){
+    console.log("error is: ", err);
+  }
+  request.send();
+}
 
-$(window).resize(function(){
-   drawChart();
-  drawChart2();
- });
+function getData2() {
+  let request = new XMLHttpRequest();
+  let requestUrl = "https://api.eia.gov/series/?api_key=ffdbc2ac0fd91596a58b9cf3fb6c29bd&series_id=SEDS.TETCB.FL.A"
+  request.open('GET', requestUrl, true)
+  request.onload = function(){
+    console.log("response from server is: ", request)
+    if (request.status !== 200) {
+      console.log("Something is wrong", request);
+      return;
+    }
+    let response = JSON.parse(request.response);
+    drawChart2(response.series[0].data);
+  }
+  
+  request.error = function(err){
+    console.log("error is: ", err);
+  }
+  request.send();
+}
+
+function drawChart(freshData) {
+  let headerArray = ['Year' , 'BTUs (in billions)'];
+  let flippedData = freshData;
+  let fixedData = flippedData.reverse();
+  fixedData.unshift(headerArray);
+  let data = google.visualization.arrayToDataTable(fixedData);
+
+  let options = {
+    title: 'Florida Energy Production',
+    hAxis: {title: 'Year'},
+    vAxis: {title: 'BTUs (in billions)'},
+    colors: ['#618b44'],
+    legend: 'none',
+  };
+
+  let chart = new google.visualization.ScatterChart(document.getElementById('curve_chart'));
+
+  chart.draw(data, options);
+  
+  $(window).resize(function () {
+    chart.draw(data, options);
+  });
+}
+
+
+function drawChart2(freshData) {
+  let headerArray = ['Year' , 'BTUs (in billions)'];
+  let flippedData = freshData;
+  let fixedData = flippedData.reverse();
+  fixedData.unshift(headerArray);
+  let data = google.visualization.arrayToDataTable(fixedData)
+
+  let options = {
+    title: 'Florida Electrictiy Consumption',
+    curveType: 'function',
+    legend: { position: 'bottom' },
+    colors: ['#FF8811']
+  };
+
+  let chart = new google.visualization.LineChart(document.getElementById('curve_chart2'));
+
+  chart.draw(data, options);
+  
+  $(window).resize(function () {
+    chart.draw(data, options);
+  });
+}

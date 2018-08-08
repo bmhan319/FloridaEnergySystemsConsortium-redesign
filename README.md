@@ -32,3 +32,15 @@ For the first graph, all the data arrays were re-aranged manually in reverse ord
 On the second graph, I didn't want to manually adjust it again and so .reverse() was used on the main array in order to leave the data in it's orignal order but still have the graph present the data correctly.
 
 TODO: After assignment is complete, change the scatter graph back to a line graph. Also change the graph options so that they are consistent between the two.
+
+
+U.S Energy API Info -
+Terms of Service Agreement - https://www.eia.gov/opendata/register.php
+
+Energy Production - Florida 
+https://www.eia.gov/opendata/qb.php?category=40426&sdid=SEDS.REPRB.FL.A
+
+Energy Consumption - Florida
+https://canvas.uw.edu/courses/1205807/assignments/4309548
+
+
