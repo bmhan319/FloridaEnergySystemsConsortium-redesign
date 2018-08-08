@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", onDOMLoad);
 
 function getData() {
   let request = new XMLHttpRequest();
-  let requestUrl = "http://api.eia.gov/series/?api_key=ffdbc2ac0fd91596a58b9cf3fb6c29bd&series_id=SEDS.REPRB.FL.A"
+  let requestUrl = "https://api.eia.gov/series/?api_key=ffdbc2ac0fd91596a58b9cf3fb6c29bd&series_id=SEDS.REPRB.FL.A"
   request.open('GET', requestUrl, true)
   request.onload = function(){
     console.log("response from server is: ", request)
@@ -35,7 +35,7 @@ function getData() {
 
 function getData2() {
   let request = new XMLHttpRequest();
-  let requestUrl = "http://api.eia.gov/series/?api_key=ffdbc2ac0fd91596a58b9cf3fb6c29bd&series_id=SEDS.TETCB.FL.A"
+  let requestUrl = "https://api.eia.gov/series/?api_key=ffdbc2ac0fd91596a58b9cf3fb6c29bd&series_id=SEDS.TETCB.FL.A"
   request.open('GET', requestUrl, true)
   request.onload = function(){
     console.log("response from server is: ", request)
