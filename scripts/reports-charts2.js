@@ -3,7 +3,6 @@
 // 3 Get API DAta
 // 4 Receive API DAta
 // 5 Draw Chart
-//ffdbc2ac0fd91596a58b9cf3fb6c29bd
 
 
 function onDOMLoad() {
@@ -72,6 +71,10 @@ function drawChart(freshData) {
   let chart = new google.visualization.ScatterChart(document.getElementById('curve_chart'));
 
   chart.draw(data, options);
+  
+  $(window).resize(function () {
+    chart.draw(data, options);
+  });
 }
 
 
@@ -92,9 +95,8 @@ function drawChart2(freshData) {
   let chart = new google.visualization.LineChart(document.getElementById('curve_chart2'));
 
   chart.draw(data, options);
+  
+  $(window).resize(function () {
+    chart.draw(data, options);
+  });
 }
-
-$(window).resize(function(){
-   drawChart();
-  drawChart2();
- });
