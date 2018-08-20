@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles/team.css">
     <link rel="stylesheet" type="text/css" href="styles/nav.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="scripts/team.js"></script>
     <title>FESC - Meet the Team</title>
   </head>
   
@@ -133,7 +135,7 @@
     
     <!-- Container for Main Body section -->
     <main class="main-body">
-      <section class="container team-body">
+      <section class="container team-body" id="teamListings">
         <div class="row body-row1">
           <div class="col-md-12 body-row1-col1">
             <h1 class="heading1">People</h1>
@@ -141,62 +143,14 @@
           </div>
         </div>
         
-        <div class="row row2">
-          <div class="col-xs-12 col-sm-4 col-md-4 col col1">
-            <div class="rowa"><h2><p>Faculty</p><p class="invisible">.</p></h2></div>
+        <div class="row row2 profile-container">
+          <div class="col-xs-12 col-sm-4 col-md-4 col col1 profile" v-for="profile in profiles">
+            <div class="rowa"><h2><p>{{profile.name}}</p><p v-bind:class="profile.visible">{{profile.name2}}</p></h2></div>
             <div class="rowb">
-              <img src="img/team-faculty.jpg" alt=teachers>
+              <img v-bind:src="profile.imgSource" v-bind:alt="profile.alt">
             </div>
             <div class="rowc">
-              <a href=#>View the Faculty</a>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-4 col-md-4 col col2">
-            <div class="rowa"><h2><p>Leadership</p><p>Team</p></h2></div>
-            <div class="rowb">
-              <img src="img/team-leader.jpg" alt="team leader">
-            </div>
-            <div class="rowc">
-              <a href=#>View the Leadership Team</a>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-4 col-md-4 col col3">
-            <div class="rowa"><h2><p>University</p><p>Leads</p></h2></div>
-            <div class="rowb">
-              <img src="img/team-univ-lead.jpg" alt="university lead">
-            </div>
-            <div class="rowc">
-              <a href=#>View the University Leads</a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="row row3">
-          <div class="col-xs-12 col-sm-4 col-md-4 col col1">
-            <div class="rowa"><h2><p>Advisory</p><p>Board</p></h2></div>
-            <div class="rowb">
-              <img src="img/team-advisory.jpg" alt="advisory board">
-            </div>
-            <div class="rowc">
-              <a href=#>View the Advisory Board</a>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-4 col-md-4 col col2">
-            <div class="rowa"><h2><p>Oversight</p><p>Committee</p></h2></div>
-            <div class="rowb">
-              <img src="img/team-oversight.jpg" alt="oversight team">
-            </div>
-            <div class="rowc">
-              <a href=#>View the Oversight Committee</a>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-4 col-md-4 col col3">
-            <div class="rowa"><h2><p>Search By</p><p>University</p></h2></div>
-            <div class="rowb">
-              <img src="img/team-university.jpg" alt="university">
-            </div>
-            <div class="rowc">
-              <a href=#>Search By University Affiliation</a>
+              <a href=#>{{profile.link}}</a>
             </div>
           </div>
         </div>

@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles/research.css">
     <link rel="stylesheet" type="text/css" href="styles/nav.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="scripts/research.js"></script>
     <title>FESC - Research</title>
   </head>
   
@@ -135,7 +137,7 @@
     
     <!-- Container for Main Body section -->
     <main class="main-body">
-      <section class="container research-body">
+      <section class="container research-body"  id="energyListings">
         <div class="row body-row1">
           <div class="col-md-12 body-row1-col1">
             <h1 class="heading1">Research Fields</h1>
@@ -143,99 +145,19 @@
           </div>
         </div>
         
-        <div class="row body-row2">
-          <div class="col-xs-12 col-sm-6 col-md-6 body-row2-col1">
-            <div class="rowa"><h4>Renewable Energy</h4></div>
+        <div class="row body-row2  profile-container">
+          <div class="col-xs-12 col-sm-6 col-md-6 body-row2-col1 profile" v-for="profile in profiles">
+            <div class="rowa"><h4>{{profile.name}}</h4></div>
             <div class="research-rowb">
               <div class="research-cola">
-                <img src="img/research-wind.jpg" alt="wind energy icon">
+                <img v-bind:src="profile.imgSource" v-bind:alt="profile.name">
               </div>
               <div class="colb">
                 <ul>
-                  <li class="research-text"><a href=#>Bioenergy</a></li>
-                  <li class="research-text"><a href=#>Ocean</a></li>
-                  <li class="research-text"><a href=#>Solar</a></li>
-                  <li class="research-text"><a href=#>Wind</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-6 body-row2-col2">
-            <div class="rowa"><h4>Energy Storage</h4></div>
-            <div class="research-rowb">
-              <div class="research-cola">
-                <img src="img/research-storage.jpg" alt="battery icon">
-              </div>
-              <div class="colb">
-                <ul>
-                  <li class="research-text"><a href=#>Batteries</a></li>
-                  <li class="research-text"><a href=#>Energy Delivery Infrastructures</a></li>
-                  <li class="research-text"><a href=#>Electric Grid</a></li>
-                  <li class="research-text"><a href=#>SuperConductors</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xs-12 col-sm-6 col-md-6 body-row3-col1">
-            <div class="rowa"><h4>Fossil Fuels</h4></div>
-            <div class="research-rowb">
-              <div class="research-cola">
-                <img src="img/research-coal.jpg" alt="coal cart icon">
-              </div>
-              <div class="colb">
-                <ul>
-                  <li class="research-text"><a href=#>Coal</a></li>
-                  <li class="research-text"><a href=#>Co2 Emission</a></li>
-                  <li class="research-text"><a href=#>Natural Gas</a></li>
-                  <li class="research-text"><a href=#>Oil</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-6 body-row3-col2">
-            <div class="rowa"><h4>Nuclear Energy</h4></div>
-            <div class="research-rowb">
-              <div class="research-cola">
-                <img src="img/research-nuclear.jpg" alt="nuclear reactor icon">
-              </div>
-              <div class="colb">
-                <ul>
-                  <li class="research-text"><a href=#>Disposal</a></li>
-                  <li class="research-text"><a href=#>Nuclear Storage</a></li>
-                  <li class="research-text"><a href=#>Safety</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-xs-12 col-sm-6 col-md-6 body-row4-col1">
-            <div class="rowa"><h4>Efficient End Use</h4></div>
-            <div class="research-rowb">
-              <div class="research-cola">
-                <img src="img/research-end-use.jpg" alt="lightbulb icon">
-              </div>
-              <div class="colb">
-                <ul>
-                  <li class="research-text"><a href=#>Buildings</a></li>
-                  <li class="research-text"><a href=#>Transportation</a></li>
-                  <li class="research-text"><a href=#>Water Use</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-6 body-row4-col2">
-            <div class="rowa"><h4>Environmental Impact</h4></div>
-            <div class="research-rowb">
-              <div class="research-cola">
-                <img src="img/research-impact.jpg" alt="nuclear icon">
-              </div>
-              <div class="colb">
-                <ul>
-                  <li class="research-text"><a href=#>Air Quality</a></li>
-                  <li class="research-text"><a href=#>Climate</a></li>
-                  <li class="research-text"><a href=#>Land</a></li>
-                  <li class="research-text"><a href=#>Water</a></li>
+                  <li class="research-text"><a href=#>{{profile.link1}}</a></li>
+                  <li class="research-text"><a href=#>{{profile.link2}}</a></li>
+                  <li class="research-text"><a href=#>{{profile.link3}}</a></li>
+                  <li class="research-text"><a href=#>{{profile.link4}}</a></li>
                 </ul>
               </div>
             </div>
