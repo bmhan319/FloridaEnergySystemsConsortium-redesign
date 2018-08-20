@@ -11,6 +11,8 @@
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="scripts/main.js"></script>
     <title>FESC</title>
   </head>
   
@@ -295,22 +297,14 @@
       <!-- End of Mid Body Container -->
       
       <!-- Lower Body Container -->
-      <div class="row main-bottom">
+      <div class="row main-bottom" id="financeListings">
         <div class="col-xs-12 col-sm-12 col-md-12 main-bottom-row0">
           <h2>More on the FESC</h2>
         </div>
-        <div class="row main-bottom-row1">
-          <div class="col-xs-6 col-sm-3 col-md-3 main-col">
-            <a href=#><img src="img/lb-report2.png" alt="annual report"></a>
-          </div>
-          <div class="col-xs-6 col-sm-3 col-md-3 main-col">
-            <a href=#><img src="img/lb-grants-cropped2.jpg" alt="grants"></a>
-          </div>
-          <div class="col-xs-6 col-sm-3 col-md-3 main-col">
-            <a href=#><img src="img/lb-newsletters2.jpg" alt="newsletters"></a>
-          </div>
-          <div class="col-xs-6 col-sm-3 col-md-3 main-col">
-            <a href=#><img src="img/lb-donate-cropped2.jpg" alt="donate"></a>
+        
+        <div class="row main-bottom-row1 profile-container">
+          <div class="col-xs-6 col-sm-3 col-md-3 main-col profile" v-for="profile in profiles">
+            <a href=#><img v-bind:src="profile.imgSource" v-bind:alt="profile.name"></a>
           </div>
         </div>
       </div>
